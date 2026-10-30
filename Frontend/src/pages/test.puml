@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+
+actor Admin
+
+rectangle "Academic System" {
+
+  usecase "Login" as L
+  usecase "Recover Password" as RP
+  usecase "View Analytics" as VA
+  usecase "View Schedule" as VS
+
+  usecase "Manage Lectures" as ML
+  usecase "Add Lecture" as AL
+  usecase "Edit Lecture" as EL
+  usecase "Delete Lecture" as DL
+
+  usecase "Manage Teachers" as MT
+  usecase "Add Teacher" as AT
+  usecase "Edit Teacher" as ET
+  usecase "Delete Teacher" as DT
+}
+
+Admin --> L
+Admin --> RP
+Admin --> VA
+Admin --> VS
+Admin --> ML
+Admin --> MT
+
+AL ..> ML : <<extend>>
+EL ..> ML : <<extend>>
+DL ..> ML : <<extend>>
+
+AT ..> MT : <<extend>>
+ET ..> MT : <<extend>>
+DT ..> MT : <<extend>>
+
+@enduml

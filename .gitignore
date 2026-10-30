@@ -1,0 +1,31 @@
+﻿# ===== Node Modules =====
+node_modules/
+*/node_modules/
+
+# ===== Build Output =====
+Frontend/build/
+Frontend/.cache/
+
+# ===== Environment Variables =====
+.env.local
+.env.production
+Frontend/.env.local
+Frontend/.env.production
+
+# ===== Logs =====
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Editor =====
+.vscode/
+.idea/
+*.swp
+
+# ===== Screenshots =====
+Screenshot*.png
